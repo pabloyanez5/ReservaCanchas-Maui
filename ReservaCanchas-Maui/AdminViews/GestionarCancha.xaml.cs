@@ -10,7 +10,7 @@ public partial class GestionarCancha : ContentPage
     public Cancha _cancha;
     public ReservaRepositroy _repository;
     public Reserva _reserva;
-    public GestionarCancha(Cancha cancha, Usuario usuario, Complejo complejo)
+    public GestionarCancha()
 	{
 		//InitializeComponent();
 	}

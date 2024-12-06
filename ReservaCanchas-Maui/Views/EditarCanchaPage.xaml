@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReservaCanchas_Maui.AdminViews.EditarCanchaPage"
+             Title="Editar Cancha">
+	<ScrollView>
+		<StackLayout Padding="20" Spacing="15">
+			<Label Text="Nombre de la Cancha" FontAttributes="Bold" />
+			<Entry x:Name="NombreCanchaEntry" Placeholder="Introduce el nombre" />
+
+			<Label Text="Número de Jugadores" FontAttributes="Bold" />
+			<Entry x:Name="NumeroJugadoresEntry" Keyboard="Numeric" Placeholder="Máximo número de jugadores" />
+
+			<Label Text="Precio por Hora" FontAttributes="Bold" />
+			<Entry x:Name="PrecioPorHoraEntry" Keyboard="Numeric" Placeholder="Introduce el precio" />
+
+			<Label Text="Hora de Apertura" FontAttributes="Bold" />
+			<TimePicker x:Name="HoraAperturaPicker" />
+
+			<Label Text="Hora de Cierre" FontAttributes="Bold" />
+			<TimePicker x:Name="HoraCierrePicker" />
+
+			<Label Text="Imagen de la Cancha" FontAttributes="Bold" />
+			<Button Text="Seleccionar Imagen" Clicked="OnSeleccionarImagenClicked" />
+
+			<Image x:Name="ImagenCanchaImage" HeightRequest="150" Aspect="AspectFill" IsVisible="False" />
+
+			<Button Text="Guardar Cambios" Clicked="OnGuardarCambiosClicked" />
+		</StackLayout>
+	</ScrollView>
+</ContentPage>
